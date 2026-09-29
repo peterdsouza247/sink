@@ -8,6 +8,8 @@ Open `index.html` in a browser, or upload the ZIP as an HTML5 game to itch.io wi
 
 For local two-player, create two profiles first. One places the convoy and the other hunts. An opaque handoff screen hides the current board when the device changes hands. Do not pass the device until that screen appears.
 
+Sonar now highlights its 3 × 3 search area with a sweeping pulse, a result callout, and a numbered marker on the chart. The marker records the **last scan's historical reading**; the convoy may have moved since then. Shots receive separate hit/miss feedback. Sound and the synthesized 8-bit-inspired music have independent switches at the top of the screen. Sound is the master mute. Audio starts after a player interacts with the game, as required by browsers. The pulse respects the device's reduced-motion setting, and every audio cue has text feedback.
+
 ## Saves and scope
 
 Profiles and the last 30 completed matches per profile are kept in browser local storage. Profiles can be exported as JSON and imported on another device; importing replaces this game's current profiles. A match in progress is not saved across refreshes. There is no remote matchmaking, account, or server.
